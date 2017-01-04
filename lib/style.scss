@@ -4,8 +4,19 @@ $ridiculous: cursive;
   font-family: $ridiculous;
 }
 
+.user-login {
+  text-align: center;
+}
+
 .user-image {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  margin: 0 auto;
+}
+
+.quote {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
