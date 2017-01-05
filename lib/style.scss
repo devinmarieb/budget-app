@@ -4,6 +4,10 @@ $ridiculous: cursive;
   font-family: $ridiculous;
 }
 
+input, button {
+  margin: 5px;
+}
+
 .user-login {
   text-align: center;
 }
@@ -20,4 +24,27 @@ $ridiculous: cursive;
   display: block;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.goal-vacation {
+  display: inline-block;
+}
+
+.goal-cost {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 30px;
+}
+
+.starting-dollars {
+  display: inline-block;
+}
+
+.input-section {
+  text-align: center;
+}
+
+.goal-section {
+  display: block;
+  text-align: center;
 }
