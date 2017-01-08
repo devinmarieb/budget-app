@@ -7,7 +7,7 @@ require('babel-polyfill');
 global.document = require('jsdom').jsdom(`
   <head>
     <meta charset='UTF-8'>
-    <title>Shoot The Breeze</title>
+    <title>Budget</title>
   </head>
   <body>
     <div id='application'></div>
