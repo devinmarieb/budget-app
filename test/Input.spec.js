@@ -26,13 +26,16 @@ describe('<Input />', () => {
   it('should have passed in prop for type', () => {
     const wrapper = shallow(<Input type='text' />)
     expect(wrapper.props().type).to.equal('text');
-
   })
 
   it('should have passed in prop for placeholder', () => {
     const wrapper = shallow(<Input placeholder='type stuff here' />)
     expect(wrapper.props().placeholder).to.equal('type stuff here');
+  })
 
+  it('should have passed in prop for value', () => {
+    const wrapper = shallow(<Input value='stuff' />)
+    expect(wrapper.props().value).to.equal('stuff');
   })
 
 
