@@ -6,10 +6,6 @@ describe('randomQuote()', () => {
   it('returns a random quote', () => {
     let quote = randomQuote();
     expect(quote).to.be.not.empty;
-
   });
-
-
-
 
 });

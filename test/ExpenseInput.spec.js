@@ -36,7 +36,4 @@ describe('<ExpenseInput />', () => {
     expect(wrapper.state().draftText).to.equal('blah')
   });
 
-
-
-
 });

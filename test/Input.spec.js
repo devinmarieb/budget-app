@@ -38,7 +38,4 @@ describe('<Input />', () => {
     expect(wrapper.props().value).to.equal('stuff');
   })
 
-
-
-
 });

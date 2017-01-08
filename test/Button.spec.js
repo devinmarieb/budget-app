@@ -30,9 +30,5 @@ describe('<Button />', () => {
     const wrapper = mount(<Button className='btn' />)
     expect(wrapper.props().className).to.equal('btn');
   })
-
-
-
-
-
+  
 });

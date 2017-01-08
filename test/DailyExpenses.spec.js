@@ -10,7 +10,6 @@ import DailyExpenses from '../lib/components/DailyExpenses'
 
 import locus from 'locus'
 
-
 describe('<DailyExpenses />', () => {
 
   it.skip('renders as a <ul>', () => {
@@ -18,8 +17,5 @@ describe('<DailyExpenses />', () => {
     console.log(wrapper).debug();
     assert.equal(wrapper.type(), 'ul');
   });
-
-
-
 
 });
