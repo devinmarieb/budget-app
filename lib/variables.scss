@@ -10,3 +10,34 @@
 @mixin textCenter {
   text-align: center;
 }
+
+@mixin buttonInputStyles {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+@mixin dateDisplay {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+//colors
+$lightBackground: #f5fbef;
+$headerColor: #71b340;
+$buttonColor: #545e56;
+$textColor: #ffffff;
+$moneyColor: #71B340;
+$spentMoneyColor: #DC143C;
+
+//fonts
+$titleFont:'Prata', serif;
+$bodyFont:'Raleway', sans-serif;
+
+// $quoteFont:'Amatic SC', cursive;
