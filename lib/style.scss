@@ -1,11 +1,35 @@
 @import 'variables';
 
+
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  background-color: #dddddd;
+}
+
+.quote {
+  font-family: 'Quattrocento', serif;
+  font-size: 10pt;
+  padding-top: 20px;
+}
+
+.today, .good-decisions {
+  font-size: 15pt;
+}
+
 input, button {
   margin: 5px;
 }
 
+.hello-user {
+  font-size: 30pt;
+}
+
 .user-login {
   @include textCenter;
+  margin: 30px 0;
+  background-color: #75bba0;
+  color: white;
+  height: 150px;
 }
 
 .user-image {
@@ -55,4 +79,9 @@ input, button {
 
 .month-name-section {
   @include center;
+}
+
+.dollabills {
+  width: 200px;
+  height: 400px;
 }
