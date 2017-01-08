@@ -41,10 +41,16 @@ input, button {
 
 .monthly-section {
   @include center;
+  margin: 20px;
 }
 
 .daily-section {
   @include center;
+  margin: 20px;
+}
+
+.daily-expenses-list {
+  margin: 20px;
 }
 
 .month-name-section {
