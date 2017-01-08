@@ -1,15 +1,11 @@
-$ridiculous: cursive;
-
-.hello-world {
-  font-family: $ridiculous;
-}
+@import 'variables';
 
 input, button {
   margin: 5px;
 }
 
 .user-login {
-  text-align: center;
+  @include textCenter;
 }
 
 .user-image {
@@ -21,13 +17,12 @@ input, button {
 }
 
 .quote {
-  display: block;
-  text-align: center;
+  @include center;
   margin-bottom: 20px;
 }
 
 .goal-vacation {
-  display: inline-block;
+  @include inline;
 }
 
 .goal-cost {
@@ -37,24 +32,27 @@ input, button {
 }
 
 .starting-dollars {
-  display: inline-block;
+  @include inline;
 }
 
 .input-section {
-  text-align: center;
+  @include textCenter;
 }
 
-.goal-section {
-  display: block;
-  text-align: center;
+.monthly-section {
+  @include center;
+  margin: 20px;
+}
+
+.daily-section {
+  @include center;
+  margin: 20px;
+}
+
+.daily-expenses-list {
+  margin: 20px;
 }
 
 .month-name-section {
-  display: block;
-  text-align: center;
-}
-
-.next-month, .previous-month, .display-month {
-  display: inline-block;
-  margin: 10px;
+  @include center;
 }
