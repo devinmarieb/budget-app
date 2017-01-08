@@ -2,20 +2,24 @@ import React from 'react'
 import { shallow, mount, render } from 'enzyme';
 import { assert, expect } from 'chai';
 import sinon from 'sinon'
-import { mockDailyExpensesList } from './helpers/mockData'
+import { stubDailyExpensesList } from './helpers/stubData'
 
 import DailyExpenses from '../lib/components/DailyExpenses'
-// import Input from '../lib/components/Input'
-// import Button from '../lib/components/Button'
 
 import locus from 'locus'
 
 describe('<DailyExpenses />', () => {
 
-  it.skip('renders as a <ul>', () => {
-    const wrapper = shallow(<DailyExpenses dailyExpensesList={mockDailyExpensesList}/>)
-    console.log(wrapper).debug();
-    assert.equal(wrapper.type(), 'ul');
+  it('renders as a <section>', () => {
+    const wrapper = shallow(<DailyExpenses dailyExpensesList={stubDailyExpensesList}/>)
+    assert.equal(wrapper.type(), 'section');
   });
+
+  it('renders expenses from dailyExpensesList list', () => {
+    const wrapper = shallow(<DailyExpenses dailyExpensesList={stubDailyExpensesList}/>);
+    const list = wrapper.find('.daily-expenses-list-item');
+    expect(list).to.have.length(3);
+  });
+
 
 });

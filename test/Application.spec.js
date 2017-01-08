@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 import { assert, expect } from 'chai';
 
-// import MonthyExpenses from '../lib/components/MonthyExpenses'
+import MonthlyExpenses from '../lib/components/MonthlyExpenses'
 import Application from '../lib/components/Application'
 import Button from '../lib/components/Button'
 import DailyExpenses from '../lib/components/DailyExpenses'
@@ -34,10 +34,12 @@ describe('<Application />', () => {
     expect(wrapper.find(DailyExpenses)).to.have.length(1);
   });
 
-  it.skip('should render one <MonthlyExpenses /> component', () => {
+  it('should render one <MonthlyExpenses /> component', () => {
     const wrapper = mount(<Application />);
     expect(wrapper.find(MonthlyExpenses)).to.have.length(1);
   });
+
+
 
 
 
