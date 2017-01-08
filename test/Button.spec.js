@@ -16,7 +16,6 @@ describe('<Button />', () => {
   it('should call handleClick on onClick', () => {
     const handleClick = sinon.spy()
     const wrapper = mount(<Button className='user-input-button' handleClick={ handleClick } />)
-    // console.log(wrapper.debug());
     expect(handleClick.calledOnce).to.equal(false)
     wrapper.find('.user-input-button').simulate('click')
     expect(handleClick.calledOnce).to.equal(true)
