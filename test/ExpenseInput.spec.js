@@ -27,11 +27,9 @@ describe('<ExpenseInput />', () => {
     expect(wrapper.find(Button)).to.have.length(1);
   });
 
-  it.skip('should update state on change', () => {
+  it('should update draftText state on change', () => {
     const wrapper = mount(<ExpenseInput />)
-    const inputField = wrapper.find('.expense-input-category')
-
-     eval(locus);
+    const inputField = wrapper.find('input').first();
     inputField.simulate('change', inputField.node.value = 'blah')
     expect(wrapper.state().draftText).to.equal('blah')
   });
