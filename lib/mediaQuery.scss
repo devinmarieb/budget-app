@@ -1,7 +1,23 @@
 @media screen and (min-width: 900px) {
 
+  .right-side {
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+
+  .left-side {
+    position: fixed;
+    width:50%;
+  }
+
 body {
   font-family: $bodyFont;
+}
+
+
+input, button {
+  @include buttonInputStyles;
 }
 
 .hello-user {
@@ -12,10 +28,6 @@ body {
   font-size: 20px;
 }
 
-
-input, button {
-  @include buttonInputStyles;
-}
 
 .quote {
   font-size: 20px;
@@ -47,7 +59,7 @@ input, button {
 
 .daily-section {
   @include center;
-  margin: 40px;
+  // margin: 40px;
 }
 
 .daily-expenses-list {

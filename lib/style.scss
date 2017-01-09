@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mediaQuery';
 
+
 body {
   font-family: $phoneBodyFont;
   background-color: $lightBackground;
@@ -9,6 +10,10 @@ body {
 
 .hello-user {
   font-size: 25px;
+}
+
+.date-picker {
+  @include center;
 }
 
 .user-login {
