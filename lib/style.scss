@@ -33,6 +33,11 @@ body {
   margin: 10px auto;
 }
 
+input:focus {
+  outline: solid $buttonColor;
+  border-radius: 0%;
+}
+
 input, button {
   @include mobileButtonInputStyles;
 }
@@ -54,7 +59,7 @@ button {
     filter: opacity(25%);
 
     &:hover {
-      filter: opacity(25%);
+      filter: opacity(50%);
     }
   }
 }

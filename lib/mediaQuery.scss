@@ -20,7 +20,6 @@ body {
   font-family: $bodyFont;
 }
 
-
 input, button {
   @include buttonInputStyles;
 }
@@ -41,6 +40,7 @@ input, button {
 
 .input-section {
   @include textCenter;
+  margin: 20px 0;
 }
 
 .monthly-income, .balance-after-bills {
@@ -51,8 +51,8 @@ input, button {
   @include center;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid $buttonColor;
+  border-bottom: 2px solid $buttonColor;
   background-color: white;
 }
 
