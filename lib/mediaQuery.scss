@@ -1,18 +1,18 @@
 @media screen and (min-width: 1040px) {
 
 .right-side {
-  position: fixed;
+  position: absolute;
   right: 0;
   width: 50%;
   background-color: #E8E8E8;
-  height: 100vh;
+  min-height: 100%;
 }
 
 .left-side {
-  position: fixed;
+  position: absolute;
   width:50%;
   background-color: #F7F9F9;
-  height: 100vh;
+  min-height: 100%;
 }
 
 body {
