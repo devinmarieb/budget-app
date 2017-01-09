@@ -10,14 +10,14 @@ import locus from 'locus'
 
 describe('<MonthlyExpenses />', () => {
 
-  it('renders as a <section>', () => {
+  it('renders as a <ul>', () => {
     const wrapper = shallow(<MonthlyExpenses monthlyExpensesList={stubMonthlyExpensesList}/>)
-    assert.equal(wrapper.type(), 'section');
+    assert.equal(wrapper.type(), 'ul');
   });
 
   it('renders expenses from dailyExpensesList list', () => {
     const wrapper = shallow(<MonthlyExpenses monthlyExpensesList={stubMonthlyExpensesList}/>);
-    const list = wrapper.find('.monthly-expenses-list-item');
+    const list = wrapper.find('.list-items');
     expect(list).to.have.length(3);
   });
 
