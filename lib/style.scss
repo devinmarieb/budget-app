@@ -1,6 +1,98 @@
 @import 'variables';
 
+.user-login {
+  margin-bottom: 30px;
+  background-color: $headerColor;
+  color: $textColor;
+  font-family: $titleFont;
+  height: inherit;
+  padding: 20px 5px;
+  @include textCenter;
+}
 
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 15px auto;
+  display: block;
+}
+
+input, button {
+  @include mobileButtonInputStyles;
+}
+
+button {
+  background-color: $buttonColor;
+  color: $textColor;
+}
+
+body {
+  font-family: $phoneBodyFont;
+  background-color: $lightBackground;
+  font-size: 18px;
+}
+
+.input-section {
+  @include center;
+}
+
+.month-name, .day-name {
+  @include mobileDateDisplay;
+  @include textCenter;
+  font-family: $titleFont;
+}
+
+.day-name {
+  margin-top: 30px;
+}
+
+.monthly-income, .balance-after-bills {
+  @include textCenter;
+  margin: 15px 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.list-items {
+  @include textCenter;
+  color: $buttonColor;
+  margin: 10px;
+}
+
+.quote {
+  @include center;
+  @include mobileHeaderTextStyles;
+}
+
+.hello-user {
+  font-size: 25px;
+}
+
+.good-decisions {
+  @include center;
+  @include mobileHeaderTextStyles;
+}
+
+.monthly-costs, .daily-costs {
+  color: $spentMoneyColor;
+  }
+
+  .income-money, .spending-money {
+    color: $moneyColor;
+  }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 900px){
 body {
   font-family: $bodyFont;
   background-color: $lightBackground;
@@ -14,15 +106,6 @@ input, button {
 button {
   background-color: $buttonColor;
   color: $textColor;
-}
-
-.user-login {
-  @include textCenter;
-  margin-bottom: 30px;
-  background-color: $headerColor;
-  color: $textColor;
-  font-family: $titleFont;
-  height: 150px;
 }
 
 .hello-user {
@@ -102,4 +185,5 @@ button {
 
 .monthly-costs, .daily-costs {
   color: $spentMoneyColor;
+  }
 }
