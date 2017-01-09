@@ -9,7 +9,7 @@ import DailyExpenses from '../lib/components/DailyExpenses'
 import Input from '../lib/components/Input'
 import MoneyQuotes from '../lib/components/MoneyQuotes'
 import ExpenseInput from '../lib/components/ExpenseInput'
-import MonthTitle from '../lib/components/MonthTitle'
+import DateTitle from '../lib/components/DateTitle'
 import UserInput from '../lib/components/UserInput'
 
 describe('<Application />', () => {

@@ -17,7 +17,7 @@ describe('<DailyExpenses />', () => {
 
   it('renders expenses from dailyExpensesList', () => {
     const wrapper = shallow(<DailyExpenses dailyExpensesList={stubDailyExpensesList}/>);
-    const list = wrapper.find('list-items');
+    const list = wrapper.find('.list-items');
     expect(list).to.have.length(3);
   });
 
