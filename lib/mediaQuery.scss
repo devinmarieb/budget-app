@@ -1,0 +1,61 @@
+@media screen and (min-width: 900px) {
+
+body {
+  font-family: $bodyFont;
+}
+
+.hello-user {
+  font-size: 32px;
+}
+
+.today, .good-decisions {
+  font-size: 20px;
+}
+
+
+input, button {
+  @include buttonInputStyles;
+}
+
+.quote {
+  font-size: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  @include textCenter;
+}
+
+.monthly-income, .balance-after-bills {
+  margin: 10px 10px;
+  font-size: 24px;
+}
+
+.month-name, .day-name {
+  @include dateDisplay;
+}
+
+.starting-dollars {
+  @include inline;
+}
+
+.monthly-section {
+  @include center;
+  margin: 20px;
+}
+
+.daily-section {
+  @include center;
+  margin: 40px;
+}
+
+.daily-expenses-list {
+  margin: 20px;
+}
+
+.month-name-section {
+  @include center;
+}
+
+}

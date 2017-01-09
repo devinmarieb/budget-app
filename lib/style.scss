@@ -1,4 +1,15 @@
 @import 'variables';
+@import 'mediaQuery';
+
+body {
+  font-family: $phoneBodyFont;
+  background-color: $lightBackground;
+  font-size: 18px;
+}
+
+.hello-user {
+  font-size: 25px;
+}
 
 .user-login {
   margin-bottom: 30px;
@@ -11,10 +22,11 @@
 }
 
 .user-image {
+  display: block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 input, button {
@@ -26,14 +38,20 @@ button {
   color: $textColor;
 }
 
-body {
-  font-family: $phoneBodyFont;
-  background-color: $lightBackground;
-  font-size: 18px;
+.quote {
+  @include center;
+  @include mobileHeaderTextStyles;
 }
 
 .input-section {
   @include center;
+}
+
+.monthly-income, .balance-after-bills {
+  @include textCenter;
+  margin: 15px 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .month-name, .day-name {
@@ -46,26 +64,10 @@ body {
   margin-top: 30px;
 }
 
-.monthly-income, .balance-after-bills {
-  @include textCenter;
-  margin: 15px 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
 .list-items {
   @include textCenter;
   color: $buttonColor;
   margin: 10px;
-}
-
-.quote {
-  @include center;
-  @include mobileHeaderTextStyles;
-}
-
-.hello-user {
-  font-size: 25px;
 }
 
 .good-decisions {
@@ -80,109 +82,3 @@ body {
   .income-money, .spending-money {
     color: $moneyColor;
   }
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 900px){
-body {
-  font-family: $bodyFont;
-  background-color: $lightBackground;
-  font-size: 18px;
-}
-
-input, button {
-  @include buttonInputStyles;
-}
-
-button {
-  background-color: $buttonColor;
-  color: $textColor;
-}
-
-.hello-user {
-  font-size: 32px;
-}
-
-.today, .good-decisions {
-  font-size: 20px;
-}
-
-.user-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0 auto;
-  display: block;
-}
-
-.quote {
-  font-size: 20px;
-  padding-top: 20px;
-  @include center;
-  margin-bottom: 20px;
-}
-
-.monthly-income, .balance-after-bills {
-  display: inline-block;
-  margin: 10px 10px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.starting-dollars {
-  @include inline;
-}
-
-.input-section {
-  @include textCenter;
-}
-
-.monthly-section {
-  @include center;
-  margin: 20px;
-}
-
-.daily-section {
-  @include center;
-  margin: 40px;
-}
-
-.daily-expenses-list {
-  margin: 20px;
-}
-
-.month-name-section {
-  @include center;
-}
-
-.dollabills {
-  width: 200px;
-  height: 400px;
-}
-
-.list-items {
-  color: $buttonColor;
-  margin: 10px;
-}
-
-.month-name, .day-name {
-  @include dateDisplay;
-  font-family: $titleFont;
-}
-
-.income-money, .spending-money {
-  color: $moneyColor;
-}
-
-.monthly-costs, .daily-costs {
-  color: $spentMoneyColor;
-  }
-}
