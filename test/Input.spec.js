@@ -15,9 +15,9 @@ describe('<Input />', () => {
     assert.equal(wrapper.type(), 'input');
   });
 
-  it('should call handle on change', () => {
+  it('should call updateState() onChange', () => {
     const onInputChange = sinon.spy()
-    const wrapper = mount(<Input handle={ onInputChange } />)
+    const wrapper = mount(<Input updateState={ onInputChange } />)
     expect(onInputChange.calledOnce).to.equal(false)
     wrapper.find('input').simulate('change')
     expect(onInputChange.calledOnce).to.equal(true)
