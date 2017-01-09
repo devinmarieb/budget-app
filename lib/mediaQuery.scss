@@ -1,7 +1,28 @@
 @media screen and (min-width: 900px) {
 
+.right-side {
+  position: fixed;
+  right: 0;
+  width: 50%;
+  background-color: #E8E8E8;
+  height: 100vh;
+
+}
+
+.left-side {
+  position: fixed;
+  width:50%;
+  background-color: #F7F9F9;
+  height: 100vh;
+}
+
 body {
   font-family: $bodyFont;
+}
+
+
+input, button {
+  @include buttonInputStyles;
 }
 
 .hello-user {
@@ -10,11 +31,6 @@ body {
 
 .today, .good-decisions {
   font-size: 20px;
-}
-
-
-input, button {
-  @include buttonInputStyles;
 }
 
 .quote {
@@ -28,26 +44,29 @@ input, button {
 }
 
 .monthly-income, .balance-after-bills {
-  margin: 10px 10px;
-  font-size: 24px;
+  display: inline-block;
+}
+
+.monthly-section {
+  @include center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: white;
 }
 
 .month-name, .day-name {
   @include dateDisplay;
+  margin-top: 10px;
 }
 
 .starting-dollars {
   @include inline;
 }
 
-.monthly-section {
-  @include center;
-  margin: 20px;
-}
-
 .daily-section {
   @include center;
-  margin: 40px;
 }
 
 .daily-expenses-list {

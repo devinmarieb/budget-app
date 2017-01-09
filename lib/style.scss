@@ -1,9 +1,10 @@
 @import 'variables';
 @import 'mediaQuery';
 
+
 body {
   font-family: $phoneBodyFont;
-  background-color: $lightBackground;
+  background-color: $mobileBackground;
   font-size: 18px;
 }
 
@@ -11,8 +12,11 @@ body {
   font-size: 25px;
 }
 
+.date-picker {
+  @include center;
+}
+
 .user-login {
-  margin-bottom: 30px;
   background-color: $headerColor;
   color: $textColor;
   font-family: $titleFont;
@@ -61,6 +65,7 @@ button {
 }
 
 .input-section {
+  margin-bottom: 10px;
   @include center;
 }
 
@@ -75,10 +80,6 @@ button {
   @include mobileDateDisplay;
   @include textCenter;
   font-family: $titleFont;
-}
-
-.day-name {
-  margin-top: 30px;
 }
 
 .list-items {
@@ -98,4 +99,8 @@ button {
 
   .income-money, .spending-money {
     color: $moneyColor;
+  }
+
+  .date-picker {
+    @include center;
   }
