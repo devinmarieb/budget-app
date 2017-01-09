@@ -34,7 +34,7 @@
 @mixin mobileButtonInputStyles {
   border: none;
   outline: none;
-  font-size: 10px;
+  font-size: 20px;
   padding: 5px 10px;
   border-radius: 20px;
   margin: 5px;
@@ -50,7 +50,7 @@
 
 
 //colors
-$lightBackground: #f5fbef;
+$lightBackground: #EAF2EE;
 $headerColor: #71b340;
 $buttonColor: #545e56;
 $textColor: #ffffff;
