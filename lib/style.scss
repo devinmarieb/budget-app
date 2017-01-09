@@ -36,6 +36,23 @@ input, button {
 button {
   background-color: $buttonColor;
   color: $textColor;
+
+  &:hover {
+   filter: opacity(75%);
+  }
+
+  &:active {
+    filter: opacity(100%);
+  }
+
+  &[disabled] {
+
+    filter: opacity(25%);
+
+    &:hover {
+      filter: opacity(25%);
+    }
+  }
 }
 
 .quote {
