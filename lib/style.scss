@@ -11,6 +11,7 @@ body {
 }
 
 .monthly-section {
+  @include textCenter;
   padding-top: 3px;
   padding-bottom: 3px;
   border-top: 2px solid $buttonColor;
