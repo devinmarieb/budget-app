@@ -1,6 +1,4 @@
 @import 'variables';
-@import 'mediaQuery';
-
 
 body {
   font-family: $phoneBodyFont;
@@ -12,6 +10,15 @@ body {
   font-size: 25px;
 }
 
+.monthly-section {
+  @include textCenter;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-top: 2px solid $buttonColor;
+  border-bottom: 2px solid $buttonColor;
+  background-color: white;
+}
+
 .date-picker {
   @include center;
 }
@@ -21,7 +28,7 @@ body {
   color: $textColor;
   font-family: $titleFont;
   height: inherit;
-  padding: 20px 5px;
+  padding: 10px 5px;
   @include textCenter;
 }
 
@@ -76,7 +83,7 @@ button {
 
 .monthly-income, .balance-after-bills {
   @include textCenter;
-  margin: 15px 10px;
+  margin: 7px 10px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -85,6 +92,7 @@ button {
   @include mobileDateDisplay;
   @include textCenter;
   font-family: $titleFont;
+  margin-top: 30px;
 }
 
 .list-items {
@@ -109,3 +117,5 @@ button {
   .date-picker {
     @include center;
   }
+
+@import 'mediaQuery';
