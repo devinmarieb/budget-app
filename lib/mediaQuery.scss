@@ -51,9 +51,6 @@ input, button {
   @include center;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 2px solid $buttonColor;
-  border-bottom: 2px solid $buttonColor;
-  background-color: white;
 }
 
 .month-name, .day-name {

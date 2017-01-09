@@ -12,6 +12,15 @@ body {
   font-size: 25px;
 }
 
+.monthly-section {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-top: 2px solid $buttonColor;
+  border-bottom: 2px solid $buttonColor;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
 .date-picker {
   @include center;
 }
