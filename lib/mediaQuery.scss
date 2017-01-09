@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1040px) {
 
 .right-side {
   position: fixed;
@@ -6,7 +6,6 @@
   width: 50%;
   background-color: #E8E8E8;
   height: 100vh;
-
 }
 
 .left-side {
@@ -34,8 +33,7 @@ input, button {
 
 .quote {
   font-size: 20px;
-  padding-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 5px;
 }
 
 .input-section {
@@ -45,20 +43,15 @@ input, button {
 
 .monthly-income, .balance-after-bills {
   display: inline-block;
+  font-size: 24pt;
 }
 
 .monthly-section {
   @include center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: 2px solid $buttonColor;
-  border-bottom: 2px solid $buttonColor;
-  background-color: white;
 }
 
 .month-name, .day-name {
   @include dateDisplay;
-  margin-top: 10px;
 }
 
 .starting-dollars {
