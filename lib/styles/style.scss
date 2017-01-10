@@ -2,7 +2,6 @@
 
 body {
   font-family: $bodyFont;
-  background-color: $mobileBackground;
   font-size: 18px;
 }
 
@@ -56,10 +55,10 @@ input, .btn {
   height: 18px;
   width: 18px;
   margin-right: 5px;
-  // background: url('../images/delete.svg') no-repeat;
+  background: url('../images/delete.svg')no-repeat;
 
   &:hover {
-    // background: url('../images/delete-hover.svg') no-repeat;
+    background: url('../images/delete-hover.svg')no-repeat;
   }
 }
 
