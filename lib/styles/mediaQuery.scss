@@ -23,6 +23,10 @@ input, button {
   @include buttonInputStyles;
 }
 
+button {
+  width: 100px;
+}
+
 .hello-user {
   font-size: 32px;
 }
