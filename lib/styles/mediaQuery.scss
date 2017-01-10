@@ -62,8 +62,8 @@ input, button {
   @include center;
 }
 
-.daily-expenses-list {
-  margin: 20px;
+.daily-expenses-list, .monthly-expenses-list {
+  margin: 30px;
 }
 
 .month-name-section {
