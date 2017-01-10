@@ -4,14 +4,14 @@
     position: absolute;
     right: 0;
     width: 50%;
-    background-color: #E8E8E8;
+    background-color: $rightSide;
     height: 100vh;
   }
 
   .left-side {
     position: absolute;
     width:50%;
-    background-color: #F7F9F9;
+    background-color: $leftSide;
     height: 100vh;
   }
 
