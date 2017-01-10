@@ -55,11 +55,10 @@ input, .btn {
   height: 18px;
   width: 18px;
   margin-right: 5px;
-  border-radius: 50%;
-  // background: url('../public/images/delete.svg') no-repeat;
+  background: url('../../public/images/delete.svg') no-repeat;
 
   &:hover {
-    // background: url('../public/images/delete-hover.svg') no-repeat;
+    background: url('../../public/images/delete-hover.svg') no-repeat;
   }
 }
 
