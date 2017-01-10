@@ -1,7 +1,7 @@
 @import 'variables';
 
 body {
-  font-family: $phoneBodyFont;
+  font-family: $bodyFont;
   background-color: $mobileBackground;
   font-size: 18px;
 }
@@ -74,6 +74,7 @@ button {
 .quote {
   @include center;
   @include mobileHeaderTextStyles;
+  font-family: $titleFont
 }
 
 .input-section {
