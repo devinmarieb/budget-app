@@ -1,7 +1,7 @@
 @import 'variables';
 
 body {
-  font-family: $phoneBodyFont;
+  font-family: $bodyFont;
   background-color: $mobileBackground;
   font-size: 18px;
 }
@@ -38,6 +38,7 @@ body {
   height: 40px;
   border-radius: 50%;
   margin: 10px auto;
+  border: 1px solid $buttonColor;
 }
 
 input:focus {
@@ -45,11 +46,24 @@ input:focus {
   border-radius: 0%;
 }
 
-input, button {
+input, .btn {
   @include mobileButtonInputStyles;
 }
 
-button {
+.btn-delete {
+  border: none;
+  outline: none;
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+  // background: url('../images/delete.svg') no-repeat;
+
+  &:hover {
+    // background: url('../images/delete-hover.svg') no-repeat;
+  }
+}
+
+.btn {
   background-color: $buttonColor;
   color: $textColor;
 
@@ -62,8 +76,7 @@ button {
   }
 
   &[disabled] {
-
-    filter: opacity(25%);
+    filter: opacity(50%);
 
     &:hover {
       filter: opacity(50%);
@@ -74,6 +87,7 @@ button {
 .quote {
   @include center;
   @include mobileHeaderTextStyles;
+  font-family: $titleFont
 }
 
 .input-section {
