@@ -1,7 +1,7 @@
 @import 'variables';
 
 body {
-  font-family: $phoneBodyFont;
+  font-family: $bodyFont;
   background-color: $mobileBackground;
   font-size: 18px;
 }
@@ -11,6 +11,7 @@ body {
 }
 
 .monthly-section {
+  @include textCenter;
   padding-top: 3px;
   padding-bottom: 3px;
   border-top: 2px solid $buttonColor;
@@ -54,10 +55,10 @@ input, .btn {
   height: 18px;
   width: 18px;
   margin-right: 5px;
-  background: url('./images/delete.svg') no-repeat;
+  background: url('../images/delete.svg') no-repeat;
 
   &:hover {
-    background: url('./images/delete-hover.svg') no-repeat;
+    background: url('../images/delete-hover.svg') no-repeat;
   }
 }
 
@@ -85,6 +86,7 @@ input, .btn {
 .quote {
   @include center;
   @include mobileHeaderTextStyles;
+  font-family: $titleFont
 }
 
 .input-section {
