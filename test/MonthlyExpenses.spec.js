@@ -15,9 +15,9 @@ describe('<MonthlyExpenses />', () => {
     assert.equal(wrapper.type(), 'ul');
   });
 
-  it('renders expenses from dailyExpensesList list', () => {
+  it('renders expenses from monthlyExpensesList list', () => {
     const wrapper = shallow(<MonthlyExpenses monthlyExpensesList={stubMonthlyExpensesList}/>);
-    const list = wrapper.find('.list-items');
+    const list = wrapper.find('Expense');
     expect(list).to.have.length(3);
   });
 
