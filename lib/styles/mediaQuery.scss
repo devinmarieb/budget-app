@@ -1,77 +1,73 @@
 @media screen and (min-width: 1040px) {
 
-.right-side {
-  position: absolute;
-  right: 0;
-  width: 50%;
-  background-color: #E8E8E8;
-  min-height: 100%;
-}
+  .right-side {
+    position: fixed;
+    right: 0;
+    width: 50%;
+    background-color: #E8E8E8;
+    height: 100vh;
+  }
 
-.left-side {
-  position: absolute;
-  width:50%;
-  background-color: #F7F9F9;
-  min-height: 100%;
-}
+  .left-side {
+    position: fixed;
+    width:50%;
+    background-color: #F7F9F9;
+    height: 100vh;
+  }
 
-body {
-  font-family: $bodyFont;
-}
+  body {
+    font-family: $bodyFont;
+  }
 
-input, button {
-  @include buttonInputStyles;
-}
+  input, .btn {
+    @include buttonInputStyles;
+  }
 
-button {
-  width: 100px;
-}
+  .hello-user {
+    font-size: 32px;
+  }
 
-.hello-user {
-  font-size: 32px;
-}
+  .today, .good-decisions {
+    font-size: 20px;
+  }
 
-.today, .good-decisions {
-  font-size: 20px;
-}
+  .quote {
+    font-size: 20px;
+    padding-top: 5px;
+  }
 
-.quote {
-  font-size: 20px;
-  padding-top: 5px;
-}
+  .input-section {
+    @include textCenter;
+    margin: 20px 0;
+  }
 
-.input-section {
-  @include textCenter;
-  margin: 20px 0;
-}
+  .monthly-income, .balance-after-bills {
+    display: inline-block;
+    font-size: 24pt;
+  }
 
-.monthly-income, .balance-after-bills {
-  display: inline-block;
-  font-size: 24pt;
-}
+  .monthly-section {
+    @include center;
+  }
 
-.monthly-section {
-  @include center;
-}
+  .month-name, .day-name {
+    @include dateDisplay;
+  }
 
-.month-name, .day-name {
-  @include dateDisplay;
-}
+  .starting-dollars {
+    @include inline;
+  }
 
-.starting-dollars {
-  @include inline;
-}
+  .daily-section {
+    @include center;
+  }
 
-.daily-section {
-  @include center;
-}
+  .daily-expenses-list {
+    margin: 20px;
+  }
 
-.daily-expenses-list, .monthly-expenses-list {
-  margin: 30px;
-}
-
-.month-name-section {
-  @include center;
-}
+  .month-name-section {
+    @include center;
+  }
 
 }
