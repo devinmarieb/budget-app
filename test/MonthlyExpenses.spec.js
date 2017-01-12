@@ -21,5 +21,4 @@ describe('<MonthlyExpenses />', () => {
     expect(list).to.have.length(3);
   });
 
-
 });
